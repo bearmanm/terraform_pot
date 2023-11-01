@@ -46,9 +46,9 @@ variable "aws_regions" {
     # each as strings. 
 }
 # Lists are a ordered data type. we can refer to an element by number, starting with zero.
-var.<name_label>[<element_number>]
+#var.<name_label>[<element_number>]
 # if we want the first element in our list, which is "us-east-1" our syntax would be 
-var.aws_regions[0] # a 0 for the first element enclosed in square brackets. 
+#var.aws_regions[0] # a 0 for the first element enclosed in square brackets. 
 # we can get the whole list by only specifying the name_label and skipping the square brackets. 
 
 # what if want a map holding AWS instance sizes? the type argument is basically the same! 
@@ -66,9 +66,9 @@ variable "aws_instance_size" {
 # from the default we can define the keys as small, medium or large and associate an ec2 instance size with each key.  
 # if we want to refer to the value stored in one of those keys, there are actually two ways of doing so, 
 # the first is  
-var.<name_label>.<key_name> 
+#var.<name_label>.<key_name> 
 # the second is 
-var.<name_label>["key_name"]
+#var.<name_label>["key_name"]
 # we can retreve the value stored in the small key by writing 
-var.aws_instance_sizes.small or var.aws_instance_sizes["small"]
+#var.aws_instance_sizes.small or var.aws_instance_sizes["small"]
 
