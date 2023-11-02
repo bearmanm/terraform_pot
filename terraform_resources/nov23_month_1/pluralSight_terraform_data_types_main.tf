@@ -53,7 +53,7 @@ variable "aws_regions" {
 
 # what if want a map holding AWS instance sizes? the type argument is basically the same! 
 # we want to have a map with string as the value held in the map. 
-
+# from the default we can define the keys as small, medium or large and associate an ec2 instance size with each key. 
 variable "aws_instance_size" {
     type = map(string) 
     description = "Region to use for AWS resources"
@@ -63,7 +63,7 @@ variable "aws_instance_size" {
         large  = "t2.large" 
     }
 }
-# from the default we can define the keys as small, medium or large and associate an ec2 instance size with each key.  
+ 
 # if we want to refer to the value stored in one of those keys, there are actually two ways of doing so, 
 # the first is  
 #var.<name_label>.<key_name> 
