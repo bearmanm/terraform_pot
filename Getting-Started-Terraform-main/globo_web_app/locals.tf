@@ -28,20 +28,26 @@ locals {
 	instance_prefix = "globo"
 	common_tags = {
         company = "Globomantics"
-	    project = var.project
-	    billing_code = var.billing_code
+	    #project = var.project
+	    #billing_code = var.billing_code
 	}
 }
 
 # to refer to a value stored in a local, the syntax starts with the local key word. note that local is singluar not plural. 
 # followed by dot and the name_label.
-local.<name_label>
+
+# local.<name_label>
 
 # to get the value in the instance_prefix the syntax would be
-local.instance_prefix
-# if we have a collection data type in our local, the same syntax from the variable example applies. 
-local.common_tags.company 
+
+# local.instance_prefix
+
+# if we have a collection data type in our local, the same syntax from the variable example applies.
+
+# local.common_tags.company 
+
 # we could get the value stored insdie company by writing local.common_tags.company. 
 # if we'd rather get the entire map, we'd only need to write
-local.common_tags 
+
+# local.common_tags 
 
