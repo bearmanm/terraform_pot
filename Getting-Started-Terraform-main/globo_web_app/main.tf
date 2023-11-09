@@ -25,6 +25,7 @@ resource "aws_vpc" "app" {
   cidr_block           = var.aws_vpc_cidr_block
   enable_dns_hostnames = var.aws_dns_hostname
 
+  tags = local.common_tags
 }
 
 resource "aws_internet_gateway" "app" {

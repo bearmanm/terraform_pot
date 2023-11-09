@@ -45,3 +45,19 @@ variable "instance_type" {
     description = "Type for EC2 Instance"
     default = "t3.micro"
 }
+
+variable "company" {
+    type = string
+    description = "this is the company name for resource tagging"
+    default = "Globomantics"
+}
+
+variable "project" {
+    type = string
+    description = "this is the project name for resource tagging"
+}
+
+variable "billing_code" {
+    type = string
+    description = "this is the billing code for resource tagging"
+}
