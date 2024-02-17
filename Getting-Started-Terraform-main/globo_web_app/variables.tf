@@ -13,7 +13,7 @@ variable "aws_secret_key" {
 variable "aws_region" {
     type = string
     description = "AWS Region to use for resources"
-    default = "us-east-1"
+    default = "us-east-1" # You can provide a default value
 }
 
 variable "aws_vpc_cidr_block" {
