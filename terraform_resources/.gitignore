@@ -1,0 +1,9 @@
+.terraform
+.terraform*
+feature*
+*.userdata.sh
+boot.*.sh
+feature*
+feature/*
+*-feature.yml
+*feature.yml
