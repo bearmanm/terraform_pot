@@ -13,13 +13,12 @@ variable "aws_secret_key" {
 variable "aws_region" {
     type = string
     description = "AWS Region to use for resources"
-    default = ["us-east-1", "us-east-2", "us-west-1", "us-west-2"] # You can provide one "us-east-1" default value or a list [,]  
+    default = "us-east-1" # You can provide one "us-east-1" default value or a list [,]  
 }
 
 variable "aws_vpc_cidr_block" {
     type = number
     description = "AWS vpc CIDR block address to use for resource"
-    default = "10.0.0.0/16"
 }
 
 variable "aws_dns_hostname" {
